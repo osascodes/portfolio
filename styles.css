@@ -356,6 +356,7 @@ footer h5, footer h6 {
 }
 
 footer a,
+footer:visited,
 footer a:active {
   text-decoration: none !important;
   color: rgb(248, 249, 250) !important;
