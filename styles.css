@@ -1,0 +1,488 @@
+body {
+  font-family: poppins, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: transparent;
+  padding-top: 4rem;
+  color: rgb(99, 110, 114);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.desktop {
+  display: flex;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: rgb(77, 76, 76);
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -70%;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  padding-top: 4rem;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.drawer.active {
+  right: 0;
+}
+
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drawer-links a {
+  position: relative;
+  font-size: 1.1rem;
+  padding: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(84, 84, 84);
+  display: inline-block;
+}
+
+.drawer-links a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  background: currentColor;
+  transform-origin: left;
+  transition: transform .3s ease;
+}
+
+.drawer-links a:hover {
+  color: rgb(28, 37, 70);
+}
+
+.drawer-links a:hover::after {
+  transform: scaleX(1);
+}
+
+.section {
+  height: 100vh;
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.primary-color {
+  color: rgb(28, 37, 70);
+}
+
+.intro-hi {
+  color: rgb(28, 37, 70);
+  font-size: 1.5rem;
+}
+
+.intro-name {
+  color: rgb(55, 55, 55);
+  font-weight: bolder;
+  font-size: 4rem;
+  display: block;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+.intro-p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.specialist {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(28, 37, 70);
+}
+
+#zoom-specialist {
+  display: inline-block;
+  transition: all 0.3s ease;
+  color: rgb(28, 37, 70);
+}
+
+
+#home h1 {
+  font-weight: bold
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: rgb(33, 37, 41);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: white;
+  max-width: 270px;
+  height: 370px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background-color: rgb(28, 37, 70);
+  color: white;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover i {
+  background-color: white;
+  color: rgb(28, 37, 70);
+}
+
+.service-card:hover h3 {
+  color: white;
+}
+
+.service-card i {
+  font-size: 2.2rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(28, 37, 70);
+  color: white;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  transition: all 0.3s ease;
+}
+
+#projects {
+  background-color: rgb(249, 249, 254);
+}
+
+#about p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#about h2 {
+  margin-bottom: 2.5rem;
+}
+
+#work h2 {
+  margin-bottom: 2.5rem;
+}
+
+#contact h2 {
+  margin-bottom: 2.5rem;
+}
+#contact p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#about .progress {
+  height: 0.8rem;
+  border-radius: 10px;
+}
+
+#about .progress-bar {
+  border-radius: 10px;
+  color: #ede7e7;
+  font-weight: 500;
+}
+
+.course {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(40, 40, 41);
+}
+
+.percent-color {
+  color: rgb(28, 37, 70);
+  font-size: 1.1rem;
+}
+
+.uiux-bar {
+  background-color: rgb(28, 37, 70);
+}
+
+.btn-cv {
+  text-align: center;
+}
+
+.scroll-progress {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(#002546 0%, #002546 0%, #ccc 0%);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+  font-size: 20px;
+  transition: background 0.2s linear;
+}
+
+.scroll-progress:hover {
+  background: conic-gradient(#002546 var(--progress, 0%), #ccc var(--progress, 0%));
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+.btn-outline-primary {
+  text-align: center;
+  margin-top: 4rem;
+  color: rgb(28, 37, 70);
+  border-color: rgb(28, 37, 70);
+  border-radius: 25px;
+  border-width: 2px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-5px);
+  background-color: rgb(0, 37, 70);
+  border-color: rgb(28, 37, 70);
+}
+
+.media-icon  {
+  transition: color 0.3s ease;
+}
+
+footer {
+  background-color: #292c31;
+  color: rgb(204, 204, 204);
+  min-height: 30rem;
+  display: flex;
+}
+
+footer .social-icons i {
+  margin-right: 10px;
+  font-weight: 1.2rem;
+}
+
+.footer-content {
+  padding: 3rem;
+  gap: 10px;
+}
+
+footer h5, footer h6 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(248, 249, 250);
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+footer h6 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+footer h5 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+.contact-icon {
+  background-color: rgb(79, 79, 79);
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  color: #cdcbcb;
+}
+
+.footer-list {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: transparent;
+  color: rgb(28, 37, 70);
+  border-color: rgb(28, 37, 70);
+  border-radius: 25px;
+  border-width: 2px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  transform: translateY(-5px);
+  background-color: rgb(28, 37, 70);
+  border-color: rgb(28, 37, 70);
+}
+
+.btn-success {
+  background-color: rgb(28, 37, 70);
+  border-width: 2px;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-color: rgb(28, 37, 70);
+}
+
+.btn-success:hover {
+  transform: translateY(-5px);
+  background-color: rgb(28, 37, 70);
+  border-color: rgb(28, 37, 70);
+}
+
+#projects .card-title {
+  font-weight: 600;
+}
+
+@media (max-width: 48rem) {
+  .desktop {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  #about .progress {
+    height: 0.6rem;
+  }
+
+  #services h2 {
+    font-size: 2rem;
+  }
+
+  #work h2 {
+    font-size: 2rem;
+  }
+
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  .intro-name {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .btn-outline-secondary {
+    margin: 0.5rem;
+  }
+
+  .top-btn {
+    flex-direction: column !important;
+    gap: 1rem;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 10px auto;
+  }
+
+  footer .row > div {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .btn-primary {
+    display: block;
+  }
+}
