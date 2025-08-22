@@ -322,7 +322,8 @@ svg {
   font-weight: bold;
 }
 
-.btn-outline-primary:hover {
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
   transform: translateY(-5px);
   background: #002546 !important;
   border: none;
@@ -400,7 +401,8 @@ footer p {
   font-weight: bold;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:active {
   background: #002546 !important;
   transform: translateY(-5px);
   border-color: rgb(28, 37, 70);
@@ -418,7 +420,8 @@ footer p {
   border-color: rgb(28, 37, 70);
 }
 
-.btn-success:hover {
+.btn-success:hover,
+.btn-success:active {
   background: #002546 !important;
   transform: translateY(-5px);
   border-color: rgb(28, 37, 70);
