@@ -2,7 +2,7 @@ body {
   font-family: poppins, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
-  background-color: transparent;
+  background-color: light;
   padding-top: 4rem;
   color: rgb(99, 110, 114);
 }
