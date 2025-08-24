@@ -306,8 +306,8 @@ h3 {
 }
 
 svg {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .btn-outline-primary {
@@ -328,10 +328,6 @@ svg {
   border: none;
 }
 
-.media-icon  {
-  transition: color 0.3s ease;
-}
-
 footer {
   background-color: #292c31;
   color: rgb(204, 204, 204);
@@ -350,34 +346,33 @@ footer .social-icons i {
 }
 
 footer h5, footer h6 {
-  color: rgb(255, 255, 255);
+  color: rgb(250, 249, 249);
   margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 footer a {
   text-decoration: none !important;
-  color: rgb(248, 249, 250) !important;
-}
-
-footer h6 {
-  font-weight: bold;
-  font-size: 1.5rem;
+  color: rgb(255, 255, 255) !important;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 footer h5 {
-  font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 footer p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .contact-icon {
   background-color: rgb(79, 79, 79);
   padding: 12px;
   border-radius: 50%;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #cdcbcb;
 }
 
@@ -433,6 +428,10 @@ footer p {
   .hamburger {
     display: flex;
     flex-direction: column;
+  }
+
+  .drawer-links a {
+    font-size: 1rem;
   }
 
   #about h2 {
