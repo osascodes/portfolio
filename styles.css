@@ -356,7 +356,7 @@ footer a {
   text-decoration: none !important;
   color: rgb(255, 255, 255) !important;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 footer h5 {
@@ -365,7 +365,7 @@ footer h5 {
 
 footer p {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .contact-icon {
