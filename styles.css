@@ -134,17 +134,14 @@ body {
 }
 
 .intro-hi {
-  font-size: 1.2rem;
-  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-.title {
-  color: rgb(24, 24, 24);
-  font-weight: bolder;
-  font-size: 4rem;
-  display: block;
-  margin-top: 1rem;
-  white-space: nowrap;
+.main {
+  color: rgb(40, 40, 41);
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .intro-p {
@@ -160,6 +157,7 @@ body {
 }
 
 #zoom-specialist {
+  margin-bottom: 1rem;
   display: inline-block;
   transition: all 0.3s ease;
   color: rgb(28, 37, 70);
@@ -175,7 +173,7 @@ h2 {
 }
 
 h3 {
-  color: rgb(41, 37, 37);
+  color: rgb(70, 70, 70);
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -194,6 +192,7 @@ h3 {
   box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .service-card:hover {
@@ -301,6 +300,18 @@ h3 {
   transition: background 0.2s linear;
 }
 
+.hidden {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.visible {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
 .scroll-progress:hover {
   background: conic-gradient(#002546 var(--progress, 0%), #ccc var(--progress, 0%));
 }
@@ -368,6 +379,12 @@ footer p {
   font-weight: 600;
 }
 
+.footer-line {
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}
+
 .contact-icon {
   background-color: rgb(79, 79, 79);
   padding: 12px;
@@ -421,6 +438,12 @@ footer p {
   font-weight: 600;
 }
 
+.btn {
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
 @media (max-width: 48rem) {
   .desktop {
     display: none;
@@ -432,6 +455,18 @@ footer p {
 
   .drawer-links a {
     font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .main {
+    font-size: 1.8rem;
+  }
+
+  .intro-hi {
+    font-size: 1.2rem;
   }
 
   #about h2 {
@@ -457,11 +492,6 @@ footer p {
   #contact h2 {
     font-size: 1.5rem;
     font-weight: 700;
-  }
-
-  .title {
-    font-size: 2.5rem;
-    font-weight: bolder;
   }
 
   .btn-outline-secondary {
